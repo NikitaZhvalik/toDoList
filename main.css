@@ -283,6 +283,14 @@ ul {
         font-size: 15px;
     }
 
+    .main  {
+        padding-top: 30px;
+    }
+    
+    .hr__findItems {
+        margin-bottom: 50px;
+    }
+
     .item {
         width: 325px;
         min-height: 30px;
