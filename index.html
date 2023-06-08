@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="main.css">
+        <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One:regular:300" rel="stylesheet" />
+        <title>TO DO LIST</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="column">
+                    <div class="header__box">
+                        <h1 class="header__title"><i>TO-DO LIST</i></h1>
+                    </div>
+                    <div class="header__icon">
+                        <img src="./img/NotePencil.svg" alt="Note Pencil">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div id="main" class="card card-body main">
+<!--?Добавить задачу-->
+                <form class="form">
+                    <input class="form__add" type="text" placeholder="Добавить задачу"/>
+                    <input class="form__btn" type="submit" value="Add task"/>
+                </form>
+<!--?Поиск задачи-->
+                <div class="search-box">
+                    <input class="search" type="text" placeholder="Поиск по списку..."/>
+                    <input class="search__btn" type="submit" value="Find task"/>
+                </div>
+
+<hr class="hr__findItems">
+<!--? Список задач-->
+                <ul class="items">
+                    <li class="item list-group-item">
+                        <p class="item__text">Погулять с собакой</p>
+                        <button class="item__btn btn-light btn-sm float-right" data-action="delete" type="button">
+                        </button>
+                    </li>
+                    <li class="item list-group-item">
+                        <p class="item__text">Сходить в магазин</p>
+                        <button class="item__btn btn-light btn-sm float-right" data-action="delete" type="button">    
+                        </button>
+                    </li>
+                    <li class="item list-group-item">
+                        <p class="item__text">Посмотреть урок по JS</p>
+                        <button class="item__btn btn-light btn-sm float-right" data-action="delete" type="button">
+                        </button>
+                    </li>
+                    <li class="item list-group-item">
+                        <p class="item__text">Приготовить ужин</p>
+                        <button class="item__btn btn-light btn-sm float-right" data-action="delete" type="button"> 
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
