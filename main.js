@@ -46,7 +46,7 @@ itemsList.addEventListener('click', removeItem)
 function removeItem(event) {
     if (event.target.hasAttribute('data-action') && 
     event.target.getAttribute('data-action') === 'delete') 
-    if (confirm('Вы точно хотите удалить данную заадчу?')) {
+    if (confirm('Вы точно хотите удалить данную задачу?')) {
         event.target.parentNode.remove();
     }
 }
